@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Website Kalkulator Matematik (Segitiga)</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <div class="calculator">
+        <div class="container">
+            <h1>Kalkulator Matematik (Segitiga)</h1>
+
+            <section>
+                <h2>Luas Segitiga</h2>
+                <div class="calculator-container">
+                    <div class="segitiga-container">
+                        <canvas id="luas-segitiga" width="200" height="200"></canvas>
+                    </div>
+                    <div class="description">
+                        <p>Rumus Luas Segitiga:
+                            <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline">
+                                <mfrac><mn>1</mn><mn>2</mn></mfrac><mo>&#xd7;</mo><mi>Alas</mi><mo>&#xd7;</mo><mi>Tinggi</mi>
+                            </math>
+                        </p>
+                        <form rel="luas-segitiga">
+                            <div class="form-group">
+                                <div class="form-control">
+                                    <label for="alas">Alas:</label>
+                                    <input type="number" id="alas" min="1" value="2">
+                                </div>
+                                <div class="form-control">
+                                    <label for="tinggi">Tinggi:</label>
+                                    <input type="number" id="tinggi" min="1" value="5">
+                                </div>
+                            </div>
+                            <button class="btn btn-primary">Hitung</button>
+                        </form>
+                        <p rel="hasil-luas"></p>
+                        <div>
+                            <button class="btn btn-secondary is-hidden" rel="reset-luas-segitiga">Reset</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <hr>
+            <section style="margin-top: var(--spacing-5)">
+                <h2>Keliling Segitiga</h2>
+                <div class="calculator-container">
+                    <div class="segitiga-container">
+                        <canvas id="keliling-segitiga" width="200" height="200"></canvas>
+                    </div>
+                    <div class="description">
+                        <p>Rumus Keliling Segitiga:
+                            <math xmlns="http://www.w3.org/1998/Math/MathML">
+                                <mi>A</mi><mo>+</mo><mi>B</mi><mo>+</mo><mi>C</mi>
+                            </math>
+                        </p>
+                        <form rel="keliling-segitiga">
+                            <div class="form-group">
+                                <div class="form-control">
+                                    <label for="sisi-a">Sisi A:</label>
+                                    <input type="number" id="sisi-a" min="1" value="1">
+                                </div>
+                                <div class="form-control">
+                                    <label for="sisi-b">Sisi B:</label>
+                                    <input type="number" id="sisi-b" min="1" value="1">
+                                </div>
+                                <div class="form-control">
+                                    <label for="sisi-c">Sisi C:</label>
+                                    <input type="number" id="sisi-c" min="1" value="1">
+                                </div>
+                            </div>
+                            <button class="btn btn-primary">Hitung</button>
+                        </form>
+                        <p rel="hasil-keliling"></p>
+                        <div>
+                            <button class="btn btn-secondary is-hidden" rel="reset-keliling-segitiga">Reset</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+</body>
+</html>
